@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap');
+
+@import "tailwindcss";
+
+/* optional app-wide utilities */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+  color: #1f2937; /* text-gray-800 */
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Inter', sans-serif;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* For Firefox (Requires special CSS property) */
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* src/index.css (or global CSS file) */
+
+/* Define the primary Fintech Blue color for the stroke */
+:root {
+  --fintech-blue: #2667FF; 
+}
+
+/* 1. Standard (Thin) Blue Stroke */
+.text-stroke {
+    /* Uses text-shadow to fake a border with the defined BLUE color */
+    text-shadow: 
+        -1px -1px 0 var(--fintech-blue),  /* Top-left */
+        1px -1px 0 var(--fintech-blue),   /* Top-right */
+        -1px 1px 0 var(--fintech-blue),   /* Bottom-left */
+        1px 1px 0 var(--fintech-blue);    /* Bottom-right */
+}
+
+/* 2. Large (Thick) Blue Stroke (for big headings) */
+.text-stroke-lg {
+    text-shadow: 
+        -2px -2px 0 var(--fintech-blue), 
+        2px -2px 0 var(--fintech-blue), 
+        -2px 2px 0 var(--fintech-blue), 
+        2px 2px 0 var(--fintech-blue);
+}
