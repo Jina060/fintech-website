@@ -9,7 +9,7 @@ import icon1 from '../assets/icon1.png'
 import Patreon from '../assets/Patreon.svg'
 import Shopify from '../assets/Shopify.svg'
 import uber from '../assets/uber.png'
-import Visa from '../assets/Visa2.png'
+import visa2 from '../assets/visa2.png'
 import fire from '../assets/fire.png'
 import plus from '../assets/plus.png'
 import block from '../assets/block.png' 
@@ -104,7 +104,7 @@ const HeroSection: React.FC = () => {
               />
 
               <img
-                src={Visa}
+                src={visa2}
                 alt={Patreon}
                 className="lg:h-6 h-5"
               />
