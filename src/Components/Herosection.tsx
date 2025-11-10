@@ -51,7 +51,7 @@ const HeroSection: React.FC = () => {
       </div>
 
       {/* Main content wrapper (relative z-10 for layering) */}
-      <div className="relative z-10 container px-6 md:px-12 lg:px-14 gap-7 flex flex-col lg:flex-row items-center lg:-top-25">
+      <div className="relative z-10 container px-6 md:px-12 lg:mx-28 lg:px-0 gap-7 flex flex-col lg:flex-row items-center lg:-top-25">
         
         {/* Left Content Area (Text) */}
         <div className="flex-1 text-white lg:text-left max-w-2xl text-center lg:-mt-24 ">
