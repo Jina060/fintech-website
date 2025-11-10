@@ -102,8 +102,8 @@ const FAQ: React.FC = () => {
                         {item.question}
                       </span>
                       {isActive 
-                        ? <ChevronUp size={20} className="ml-4 flex-shrink-0" /> 
-                        : <ChevronDown size={20} className="ml-4 flex-shrink-0 text-gray-500" />
+                        ? <ChevronUp size={20} className="ml-4 shrink-0" /> 
+                        : <ChevronDown size={20} className="ml-4 shrink-0 text-gray-500" />
                       }
                     </button>
 

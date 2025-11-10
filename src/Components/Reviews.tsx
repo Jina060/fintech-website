@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { FaQuoteRight } from "react-icons/fa";
 import review1 from "../assets/review1.jpg"
@@ -123,7 +123,7 @@ const Reviews = () => {
             {testimonials.map((item, index) => (
               <div
                 key={item.id}
-                className={`flex-shrink-0 w-80 p-6 rounded-2xl shadow-md snap-center transition-all duration-300 ${
+                className={`shrink-0 w-80 p-6 rounded-2xl shadow-md snap-center transition-all duration-300 ${
                   activeIndex === index ? "bg-[#0A1E63] text-white" : "bg-white"
                 }`}
                 onClick={() => setActiveIndex(index)}

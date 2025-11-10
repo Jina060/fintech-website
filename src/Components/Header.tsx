@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChevronDown, Menu, X } from 'lucide-react'; // Added Menu and X icons
+import { Menu, X } from 'lucide-react'; // Added Menu and X icons
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

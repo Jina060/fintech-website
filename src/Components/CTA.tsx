@@ -1,4 +1,4 @@
-import React from "react";
+
 import { motion } from "framer-motion";
 import bgImage from "../assets/bg.jpg"; // ← replace with your blue background image path
 import Iphone from "../assets/Iphone.png"
