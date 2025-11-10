@@ -9,7 +9,7 @@ import icon2 from "../assets/icon2.png"
 import icon3 from "../assets/icon3.png"
 import icon4 from "../assets/icon4.png"
 import icon5 from "../assets/icon5.png"
-import visa2 from "../assets/visa2.png"
+import vicon from "../assets/vicon.png"
 
 
 const CTAHero = () => {
@@ -195,7 +195,7 @@ const CTAHero = () => {
                     <p className="font-bold lg:text-xl text-sm text-gray-800">What Limitless Transactions?</p>
                     <p className="text-[10px] text-[#878A94]">Get the new borderless dollar card only for our high net worth client</p>
                   </div>
-                 <img src={visa2} alt={visa2} className="mr-3" />
+                 <img src={vicon} alt={vicon} className="mr-3" />
                 </div>
               </div>
             </div>
