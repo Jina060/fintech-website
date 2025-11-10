@@ -51,10 +51,10 @@ const HeroSection: React.FC = () => {
       </div>
 
       {/* Main content wrapper (relative z-10 for layering) */}
-      <div className="relative lg:-top-25 z-10 container mx-auto px-6 md:px-12 lg:pl-14 lg:pr-2 gap-7 flex flex-col lg:flex-row items-center justify-between">
+      <div className="relative z-10 container px-6 md:px-12 lg:px-14 gap-7 flex flex-col lg:flex-row items-center lg:-top-25">
         
         {/* Left Content Area (Text) */}
-        <div className="flex-1 text-white lg:text-left max-w-2xl text-center lg:-mt-24">
+        <div className="flex-1 text-white lg:text-left max-w-2xl text-center lg:-mt-24 ">
           <div className="justify-center flex lg:justify-start"><p className="flex items-center justify-center lg:justify-start text-black text-[12px] font-[inter] font-medium mb-7 lg:mb-2 bg-white rounded-2xl w-43 h-[30px] px-4">
             <img 
             src={fire}
@@ -114,7 +114,7 @@ const HeroSection: React.FC = () => {
 
         {/* Right Content Area (iPhone Mockup) */}
         <div className="flex-1 flex justify-center lg:justify-end w-85 lg:w-full max-w-md lg:mt-9 mt-12 ">
-          <div className="relative w-100 aspect-10/18 justify-center items-center">
+          <div className="relative w-90 aspect-9/18 justify-center items-center">
            {/* 🚨 1. The Custom Frame Image 🚨 
                This image provides the phone border/housing. It must have transparency for the screen area.
             */}
@@ -125,7 +125,7 @@ const HeroSection: React.FC = () => {
             />
             
             {/* iPhone screen content */}
-           <div className="absolute top-[2%] left-[4.5%] lg:w-[83%] w-[90%] lg:h-[103%] h-[115%] z-20 bg-white lg:rounded-[55px] rounded-[50px] overflow-hidden">
+           <div className="absolute top-[2%] left-[4.5%] lg:w-[91%] w-[90%] lg:h-[103%] h-[115%] z-20 bg-white lg:rounded-[55px] rounded-[50px] overflow-hidden">
               
               {/* Top Bar */}
               <div className="flex items-center justify-between px-8 py-2 text-sm text-gray-800 bg-gray-50 mt-4">

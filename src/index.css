@@ -2,6 +2,7 @@
 
 @import "tailwindcss";
 
+
 /* optional app-wide utilities */
 html {
   scroll-behavior: smooth;
