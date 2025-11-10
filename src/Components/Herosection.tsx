@@ -17,7 +17,7 @@ import icon2 from '../assets/icon2.png'
 import icon3 from '../assets/icon3.png'
 import icon4 from '../assets/icon4.png'
 import icon5 from '../assets/icon5.png'
-import visa3 from '../assets/visa3.png'
+import card from '../assets/card.png'
 
 
 const HeroSection: React.FC = () => {
@@ -104,7 +104,7 @@ const HeroSection: React.FC = () => {
               />
 
               <img
-                src={visa3}
+                src={card}
                 alt={Patreon}
                 className="lg:h-6 h-5"
               />
