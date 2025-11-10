@@ -9,7 +9,7 @@ import icon1 from '../assets/icon1.png'
 import Patreon from '../assets/Patreon.svg'
 import Shopify from '../assets/Shopify.svg'
 import uber from '../assets/uber.png'
-import visa2 from '../assets/visa2.png'
+import vicon from '../assets/vicon.png'
 import fire from '../assets/fire.png'
 import plus from '../assets/plus.png'
 import block from '../assets/block.png' 
@@ -271,7 +271,7 @@ const HeroSection: React.FC = () => {
                     <p className="font-bold lg:text-xl text-sm text-gray-800">What Limitless Transactions?</p>
                     <p className="text-[10px] text-[#878A94]">Get the new borderless dollar card only for our high net worth client</p>
                   </div>
-                 <img src={visa2} alt={visa2} className="mr-3" />
+                 <img src={vicon} alt={vicon} className="mr-3" />
                 </div>
               </div>
             </div>
