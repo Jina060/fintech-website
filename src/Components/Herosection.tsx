@@ -69,7 +69,7 @@ const HeroSection: React.FC = () => {
           </p>
           </div>
           <div className=''>
-          <h1 className="text-5xl 2xl:mr-15 lg:text-[55px] xl:text-[55px] 2xl:text-[68px] font-extrabold font-sans leading-tight tracking-wide mb-3">
+          <h1 className="text-[43px] 2xl:mr-15 lg:text-[55px] xl:text-[55px] 2xl:text-[68px] font-extrabold font-sans leading-tight tracking-wide mb-3">
             Finance With Security And <span className='text-stroke'>Flexibility</span>
           </h1> 
           </div>
@@ -86,7 +86,7 @@ const HeroSection: React.FC = () => {
           </div>
 
           {/* Trusted Companies */}
-          <div className="text-[16px] 2xl:text-lg text-white mb-6 2xl:mb-6">
+          <div className="text-[16px] 2xl:text-lg text-white mb-4 2xl:mb-6">
             Trusted by <span className="font-black text-blue-500">500+</span> Companies
           </div>
           <div className="flex flex-wrap justify-center lg:justify-start items-center lg:gap-12 gap-5">
@@ -106,13 +106,13 @@ const HeroSection: React.FC = () => {
               <img
                 src={Shopify}
                 alt={Patreon}
-                className="lg:h-7 h-6 2xl:h-8"
+                className="lg:h-7 h-5 2xl:h-8"
               />
 
               <img
                 src={card}
                 alt={Patreon}
-                className="lg:h-6 h-6 2xl:h-8"
+                className="lg:h-6 h-5 2xl:h-8"
               />
           
           </div>
