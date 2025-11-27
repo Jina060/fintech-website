@@ -14,7 +14,7 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <header className="absolute top-0 left-0 right-0 z-50 py-6 px-6 md:px-12 2xl:px-35 lg:px-30">
+      <header className="absolute top-0 left-0 right-0 z-50 py-7 px-6 md:px-12 2xl:px-35 lg:px-30">
         <nav className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
