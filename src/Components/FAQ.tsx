@@ -55,10 +55,10 @@ const FAQ: React.FC = () => {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-4xl sm:text-5xl lg:text-[35px] tracking-tight font-medium text-gray-900 font-sans leading-tight mb-6">
+            <h2 className="text-4xl sm:text-5xl lg:text-[35px] 2xl:text-5xl tracking-tight font-medium text-gray-900 font-sans leading-tight mb-6">
               Frequently asked questions
             </h2>
-            <p className="text-[13px] text-[#64748B] mb-8 tracking-wide">
+            <p className="text-[13px] 2xl:text-[16px] text-[#64748B] mb-8 tracking-wide">
               Find quick solutions and helpful tips for using Paylinks. We've compiled answers to the most frequently asked questions right here.
             </p>
             <a 
@@ -70,7 +70,7 @@ const FAQ: React.FC = () => {
           </motion.div>
 
           {/* Right Column: Interactive FAQ Accordion List */}
-          <div className="lg:w-140 w-full">
+          <div className="lg:w-140 w-full lg:ml-8 2xl:ml-45">
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -80,7 +80,7 @@ const FAQ: React.FC = () => {
               {faqData.map((item) => {
                 const isActive = openId === item.id;
                 return (
-                  <div key={item.id} className="mb-4">
+                  <div key={item.id} className="mb-4 2xl:mb-7">
                     {/* Question Button (The collapsible header) */}
                     <button
                       onClick={() => toggleFaq(item.id)}
@@ -98,7 +98,7 @@ const FAQ: React.FC = () => {
                         }
                       `}
                     >
-                      <span className={`text-[15px] font-semibold ${isActive ? 'text-black' : 'text-gray-900'}`}>
+                      <span className={`text-[15px] 2xl:text-lg font-semibold ${isActive ? 'text-black' : 'text-gray-900'}`}>
                         {item.question}
                       </span>
                       {isActive 
@@ -125,11 +125,11 @@ const FAQ: React.FC = () => {
                             p-5 
                             mt-2 
                             bg-white 
-                            rounded-lg  
+                            rounded-lg 
                             ${isActive ? 'text-[#64748B]' : 'text-gray-600'}
                           `}
                         >
-                          <p className="text-[14px] leading-relaxed pl-2">{item.answer}</p>
+                          <p className="text-[14px] 2xl:text-[16px] leading-relaxed pl-2">{item.answer}</p>
                         </motion.div>
                       )}
                     </AnimatePresence>

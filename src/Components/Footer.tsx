@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
   return (
     // Outer Container: Dark background as is common for footers
     <footer className="bg-white text-black lg:py-10 py-10 pt-16 sm:pt-20">
-      <div className="container mx-auto px-9 sm:px-6 lg:px-20 max-w-7xl font-[inter]">
+      <div className="container mx-auto px-9 sm:px-6 2xl:px-5 lg:px-20 max-w-7xl font-[inter]">
         
         {/* Top Section: Logo/Description and Link Columns */}
         {/* 🚨 RESPONSIVE GRID: 1 column on mobile, 3 columns on tablet/desktop 🚨 */}
@@ -34,23 +34,23 @@ const Footer: React.FC = () => {
           
           {/* Column 1: Logo and Description */}
           <div className="md:col-span-1">
-            <h3 className="text-2xl font-bold text-black mb-3">
+            <h3 className="text-2xl 2xl:text-3xl font-bold text-black mb-3">
               Paylinks
             </h3>
-            <p className="text-[#64748B] text-sm max-w-xs">
+            <p className="text-[#64748B] 2xl:text-[15px] text-sm max-w-xs">
               Paylinks is designed to help you manage your money smarter. Join thou
             </p>
           </div>
           
           {/* Column 2: About Links (Starts from md:col-span-2 on mobile grid) */}
           <div className="md:col-span-1 lg:pl-40">
-            <h4 className="text-base font-bold text-black mb-4">About</h4>
+            <h4 className="text-base font-bold text-black mb-4 2xl:text-lg">About</h4>
             <ul className="space-y-3 text-sm">
               {footerLinks.about.map((link) => (
                 <li key={link.name}>
                   <a 
                     href={link.href} 
-                    className="text-gray-400 hover:text-blue-400 transition-colors text-sm"
+                    className="text-gray-400 hover:text-blue-400 transition-colors text-sm 2xl:text-[16px]"
                   >
                     {link.name}
                   </a>
@@ -61,13 +61,13 @@ const Footer: React.FC = () => {
           
           {/* Column 3: Support Links */}
           <div className="md:col-span-2 lg:pl-70">
-            <h4 className="text-base font-bold text-black mb-4">Support</h4>
+            <h4 className="text-base font-bold text-black mb-4 2xl:text-lg">Support</h4>
             <ul className="space-y-3 text-sm">
               {footerLinks.support.map((link) => (
                 <li key={link.name}>
                   <a 
                     href={link.href} 
-                    className="text-gray-400 hover:text-blue-400 transition-colors text-sm"
+                    className="text-gray-400 hover:text-blue-400 transition-colors text-sm 2xl:text-[16px]"
                   >
                     {link.name}
                   </a>

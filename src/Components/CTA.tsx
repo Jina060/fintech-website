@@ -10,11 +10,16 @@ import icon3 from "../assets/icon3.png"
 import icon4 from "../assets/icon4.png"
 import icon5 from "../assets/icon5.png"
 import vicon from "../assets/vicon.png"
-
+import battery from '../assets/battery.png'
+import bar from '../assets/bar.png'
+import wifi from '../assets/wifi.png'
+import { ArrowLeft } from 'lucide-react';
+import { HiChevronRight } from "react-icons/hi";
+import fire from '../assets/fire.png'
 
 const CTAHero = () => {
   return (
-    <section className="relative overflow-hidden h-210 lg:h-[480px] ">
+    <section className="relative overflow-hidden h-210 lg:h-[480px] 2xl:h-[520px] ">
       {/* Background image */}
       <div
         className="absolute inset-0 -z-10 lg:bg-cover lg:bg-center lg:bg-position-100% bg-cover bg-position-[-250px] bg-repeat"
@@ -54,14 +59,38 @@ const CTAHero = () => {
               {/* Top Bar */}
               <div className="flex items-center justify-between px-8 py-2 text-sm text-gray-800 bg-gray-50 mt-4">
                 <span>09:25</span>
-                <div className="flex items-center space-x-1">
-                  <span>📶</span><span>🔋</span>
+                <div className="flex items-center 2xl:space-x-3 space-x-2">
+                  <span>
+                    <img 
+                    src={bar}
+                    alt={bar}
+                    className='lg:w-4 2xl:w-6 w-4'
+                    />
+
+                  </span>
+                  <span>
+                    <img  
+                    src={wifi}
+                    alt={wifi}
+                    className='lg:w-4 2xl:w-6 w-4'
+                    />
+                  </span>
+
+                  <span>
+                    <img
+                    src={battery}
+                    alt={battery}
+                    className='lg:w-4 2xl:w-6 w-4'
+                    />
+                  </span>
                 </div>
               </div>
 
               {/* Navigation within phone */}
               <div className="flex items-center px-8 py-2 bg-gray-50 mb-5">
-                <button className="text-gray-500">&lt;</button>
+                <button className="text-gray-500">
+                   <ArrowLeft size={20} />
+                </button>
                 <h3 className="flex-1 text-center font-bold text-lg">cards</h3>
               </div>
 
@@ -216,30 +245,24 @@ const CTAHero = () => {
             <div className="container relative lg:-top-40 -top-2">
             {/* Small badge */}
             <div className="mb-4">
-              <span className="inline-flex items-center gap-2 bg-[#0B4430] text-xs text-white px-3 py-1 rounded-full">
-                <svg
-                  className="w-4 h-4"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12 2l2.5 5.5L20 10l-5 3.5L16 20l-4-2.5L8 20l1-6.5L4 10l5.5-2.5L12 2z"
-                    fill="#F97316"
-                  />
-                </svg>
+              <span className="inline-flex items-center gap-1 bg-[#014526] text-xs text-white px-3 py-1 rounded-full">
+                            <img 
+            src={fire}
+            alt={fire}
+            className='h-3 mr-1 2xl:h-5 2xl:mr-2'
+            /> 
                 TRUSTWORTHINESS
               </span>
             </div>
 
             {/* Headline */}
-            <h1 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold leading-tight tracking-tight">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl 2xl:text-5xl font-extrabold leading-tight tracking-tight">
               WE VALUE YOUR TRUST <br/> AND
               SECURITY
             </h1>
 
             {/* Description */}
-            <p className="mt-4 text-base lg:text-sm sm:text-lg text-white/85 max-w-xl font-[poppins]">
+            <p className="mt-4 text-base lg:text-sm sm:text-lg text-white/85 max-w-xl font-[poppins] 2xl:text-[15px]">
               Our Mission Is To Make Finance More Accessible, Transparent, And
               Secure For Everyone. With Cutting.
             </p>
@@ -248,24 +271,10 @@ const CTAHero = () => {
             <div className="mt-8">
               <a
                 href="#"
-                className="text-sm inline-flex items-center gap-2 bg-[#2B6CF6] hover:bg-[#1e4fd6] transition px-4 py-3 rounded-xl text-white font-medium"
+                className="text-sm inline-flex items-center gap-2 bg-[#2B6CF6] hover:bg-[#1e4fd6] transition 2xl:px-5 2xl:py-4 px-4 py-3 rounded-xl text-white font-medium"
               >
                 Get started
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  className="opacity-90"
-                >
-                  <path
-                    d="M5 12h14M13 5l7 7-7 7"
-                    stroke="white"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+               <HiChevronRight size={20} />
               </a>
             </div>
 

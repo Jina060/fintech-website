@@ -2,7 +2,8 @@ import React from 'react';
 
 // 🚨 PLACEHOLDER IMAGES: Replace these paths with your actual image assets
 import step1 from '../assets/step1.jpg';    // Image of person signing up
-import step2 from '../assets/step2.jpg';   // Image of hands with phone/banking
+import connect from '../assets/connect.png'
+import piggy from '../assets/piggy.png'
 
 
 // Data for the three steps
@@ -15,13 +16,13 @@ const stepsData = [
   },
   {
     step: 2,
-    image: step2,
+    image: connect,
     title: 'Connect Your Bank',
     description: 'Securely link your accounts to manage money in one place.',
   },
   {
     step: 3,
-    image: step2, // Reusing the second image as per the screenshot design
+    image: piggy, // Reusing the second image as per the screenshot design
     title: 'Start Saving & Sending',
     description: 'Transfer money, build savings, and reach your goals.',
   },

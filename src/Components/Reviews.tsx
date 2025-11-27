@@ -4,6 +4,7 @@ import { FaQuoteRight } from "react-icons/fa";
 import review1 from "../assets/review1.jpg"
 import review2 from "../assets/review2.png"
 import review3 from "../assets/review3.png"
+import fire from "../assets/fire.png"
 
 
 const testimonials = [
@@ -34,7 +35,7 @@ const Reviews = () => {
   const [activeIndex, setActiveIndex] = useState(1);
 
   return (
-    <section className="bg-[#F5F8F6] py-14 px-4 sm:px-8 lg:px-27">
+    <section className="bg-[#F5F8F6] py-20 px-4 sm:px-8 lg:px-27">
       <div className="max-w-7xl mx-auto text-center">
         {/* Tag */}
         <motion.div
@@ -42,9 +43,14 @@ const Reviews = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="inline-flex items-center gap-2 bg-white text-gray-700 px-4 py-2 rounded-full text-sm font-medium mb-6 shadow-sm"
+          className="inline-flex items-center gap-2 bg-white text-black border border-gray-200 px-4 py-2 rounded-full text-[11px] font-medium mb-6"
         >
-          🔥 TESTIMONIAL
+          <img 
+            src={fire}
+            alt={fire}
+            className='h-3 mr-1 2xl:h-5 2xl:mr-2'
+            /> 
+            TESTIMONIAL
         </motion.div>
 
         {/* Title */}

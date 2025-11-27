@@ -14,15 +14,15 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <header className="absolute top-0 left-0 right-0 z-50 py-4 px-6 md:px-12 lg:px-30">
+      <header className="absolute top-0 left-0 right-0 z-50 py-6 px-6 md:px-12 2xl:px-35 lg:px-30">
         <nav className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <span className="text-white text-2xl font-semibold font-[poppins]">Paylinx</span>
+            <span className="text-white text-2xl 2xl:text-3xl font-semibold font-[poppins]">Paylinx</span>
           </div>
 
           {/* Desktop Navigation Links */}
-          <ul className="hidden lg:flex items-center space-x-8 text-white font-[poppins] font-light text-sm">
+          <ul className="hidden lg:flex items-center space-x-8 text-white font-[poppins] font-light text-sm 2xl:text-lg">
             {navLinks.map((link) => (
               <li key={link.label}>
                 <a href={link.href} className="hover:text-blue-300 transition-colors">
@@ -33,7 +33,7 @@ const Header: React.FC = () => {
           </ul>
 
           {/* Desktop Sign In Button */}
-          <button className="hidden lg:block hover:bg-blue-700 border border-white text-white font-medium text-sm font-[poppins] py-2 px-7 rounded-lg transition-colors">
+          <button className="hidden lg:block hover:bg-blue-700 border border-white text-white font-medium 2xl:text-lg text-sm font-[poppins] py-2 px-7 rounded-lg transition-colors">
             Sign In
           </button>
 
@@ -50,7 +50,7 @@ const Header: React.FC = () => {
 
       {/* Mobile Menu (Fullscreen Overlay) */}
       {isMenuOpen && (
-        <div className="fixed inset-0 bg-linear-to-br from-[#0a1f44] to-[#122b5f] z-50 flex flex-col items-center justify-center lg:hidden">
+        <div className="fixed inset-0 bg-linear-to-br from-[#0a1f44] to-[#122b5f] z-50 flex flex-col items-center justify-center lg:hidden mt-10">
           {/* Close Button */}
           <button
             className="absolute top-6 right-6 text-white"

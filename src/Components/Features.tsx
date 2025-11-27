@@ -9,6 +9,7 @@ import {
   CartesianGrid,
 } from "recharts";
 import { motion } from "framer-motion";
+import fire from '../assets/fire.png'
 
 const Features = () => {
   const [activeFeature, setActiveFeature] = useState(0);
@@ -31,7 +32,7 @@ const Features = () => {
 
 
   return (
-    <section className="w-full bg-white pb-10 pt-25 px-6 lg:px-20 flex flex-col lg:flex-row lg:gap-12 items-center justify-between overflow-hidden relative z-20 -mt-15 sm:-mt-36 lg:-mt-83">
+    <section className="w-full bg-white pb-10 pt-25 px-6 lg:px-20 flex flex-col lg:flex-row lg:gap-12 2xl:gap-15 items-center justify-between overflow-hidden relative z-20 mt-5 sm:-mt-36 lg:-mt-83">
       {/* Left Chart */}
       <motion.div
         className="w-full lg:w-1/2 flex justify-center mb-12 lg:mb-0"
@@ -40,8 +41,8 @@ const Features = () => {
         transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        <div className="bg-gray-100 rounded-3xl lg:p-14 p-12 -mt-8 lg:mt-0 shadow-inner w-90 lg:w-115">
-          <div className="bg-[#001B5E] rounded-2xl p-6 text-white w-[260px] h-80 lg:h-[350px] lg:w-[350px] sm:w-[400px]">
+        <div className="bg-gray-100 rounded-3xl 2xl:p-14 lg:p-14 p-12 -mt-8 lg:mt-0 shadow-inner w-90 lg:w-115 2xl:w-130">
+          <div className="bg-[#001B5E] rounded-2xl p-6 text-white w-[260px] h-80 lg:h-[350px] 2xl:w-[400px] lg:w-[350px] sm:w-[400px]">
             <h3 className="text-sm font-medium mb-1 font-[inter]">Feb Savings</h3>
             <h1 className="text-2xl font-medium">#1852,00</h1>
             <p className="text-sm text-gray-300 mb-6">
@@ -81,10 +82,14 @@ const Features = () => {
         viewport={{ once: true }}
       >
       <div className="px-2 lg:px-0">
-        <span className="text-sm bg-gray-200 text-gray-700 px-4 py-1 rounded-full inline-flex items-center gap-1">
-          🔥 Featured
+        <span className="text-[11px] bg-white text-black border border-gray-200 px-4 py-1 rounded-full inline-flex items-center gap-1">
+        <img 
+            src={fire}
+            alt={fire}
+            className='h-3 mr-1 2xl:h-5 2xl:mr-2'
+            />   FEATURED
         </span>
-       <h2 className="text-[30px] lg:text-[38px] font-extrabold mt-4 mb-6 lg:mb-4 leading-tight">
+       <h2 className="text-[30px] lg:text-[38px] 2xl:text-5xl font-extrabold mt-4 mb-6 lg:mb-4 leading-tight">
           ALL YOUR MONEY<br />NEEDS IN ONE APP
         </h2>
       
@@ -108,7 +113,7 @@ const Features = () => {
               key={index}
               onClick={() => setActiveFeature(index)}
               whileHover={{ scale: 1.02 }}
-              className={`cursor-pointer lg:p-5 p-4 rounded-2xl border transition-all duration-300 w-[300px] sm:w-[350px] lg:w-[400px] font-[poppins] ${
+              className={`cursor-pointer lg:p-5 2xl:p-7 p-4 rounded-2xl border transition-all duration-300 w-[330px] sm:w-[350px] lg:w-[460px] 2xl:w-[520px] font-[poppins] ${
                 activeFeature === index
                   ? "bg-[#2B6CF6] text-white border-[#2B6CF6]"
                   : "bg-white text-black border-gray-200"
